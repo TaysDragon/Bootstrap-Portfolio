@@ -104,15 +104,16 @@ main {
 }
 
 .left {  
-	float: left;
-  	width: 40%;
-  	height: auto;
-  	padding: 20px;
-  	margin: 40px;
-  	background: #fff;
-  	border-width:5px;
-	border-color:#dddddd;
-  	
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    margin: 40px;
+    background: #fff;
+    border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+    
 }
 
 
@@ -128,8 +129,9 @@ main {
 	margin: 40px;
 	text-align: center;
 	padding: 10px;
-	border-width:5px;
-	border-color:#dddddd;
+	 border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
 }
 
 footer {
@@ -164,12 +166,22 @@ body {
 }
 
 
+#contact-form2 {
+   float: right;
+   background-color:rgba(72,72,72,0.7);
+   padding: 10px 20px 30px 20px;
+   margin-right: 60px;
+   margin-top:30px;   
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+}
+
 /* Contact Form Styles */
 h1 {
    margin: 10px 0 0 0;
 }
 h4{
-   font-family: 'fff_tusjbold', Arial, sans-serif;
    margin: 0 0 20px 0;
 }
 #contact-form {
