@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About Sharon.</title>
+    <title>Sharon Oud - Software Engineer</title>
     <link rel="shortcut icon" href="favicon.ico" type="icon">
 
     <!-- Bootstrap Core CSS -->
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Sharon Oud</a>
+                <a class="navbar-brand" href="index.html">Business Casual</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -76,24 +76,47 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">About
-                        <strong>Sharon Oud</strong>
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
-                </div>
-                <div class="col-md-6">
-                    <p>A wearer of many hats who loves to solve problems and empower people to be their best. A strategic thinker who is always looking for ways to make things more efficient while maintaining a high level of quality.</p>
-                    
-                    <p>I enjoy challenges and always learning. I make software tools that enable employees to do what humans do, and computers to do what computers do. Always keeping focus on ensuring the software does not hinder or slow down the user.</p>
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
 
-                    <p>In my spare time I enjoy being with family and friends, reading, and gardening. I have an interest in tropical fruiting plants and am crazy about mangos.</p>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">The World of Software Development</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>By
+                            <strong>Sharon Oud</strong>
+                        </small>
+                    </h2>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -101,30 +124,32 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">My
-                        <strong>Projects</strong>
+                    <h2 class="intro-text text-center">Build a website
+                        <strong>without pain</strong>
                     </h2>
                     <hr>
+                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                    <hr class="visible-xs">
+                    <p>I enjoy challenges and always learning.</p>
+                    <p>I make software tools that enable employees to do what humans do, and computers to do what computers do.</p>
+                    <p>Always keeping focus on ensuring the software does not hinder or slow down the user.</p>
+
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>PlantBot
-                        <small>MySQL database</small>
-                    </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Many thanks
+                        <strong>to those who empowered me along the way</strong>
+                    </h2>
+                    <hr>
+                    <p>A huge thanks to my family, Jim McCoy, Brett Payne, Michael Desantis, and Adam Camancho.</p>
+                    <p>A giant thanks to <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://www.npmjs.com/" target="_blank">npm authors</a> for providing me amazing code to make dynamic projects.</p>
+                    <p>A big thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing me to use beautiful photos that make this template really come to life.</p>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>BurgerYum
-                        <small>Sequalize and mySQL</small>
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>GifTastic
-                        <small>AJAX and JQuery</small>
-                    </h3>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -146,6 +171,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
